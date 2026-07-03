@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — CSV Encoding Importer</title>
+<style>
+  body { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.7; color: #202124; }
+  h1 { font-size: 2rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.2rem; border-bottom: 1px solid #eee; padding-bottom: .3rem; }
+  .meta { color: #5f6368; margin-bottom: 2rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+  th, td { border: 1px solid #dadce0; padding: 8px 12px; text-align: left; vertical-align: top; }
+  th { background: #f8f9fa; }
+  code { background: #f1f3f4; padding: 1px 5px; border-radius: 4px; font-size: .9em; }
+  footer { margin-top: 3rem; color: #5f6368; font-size: .85rem; border-top: 1px solid #eee; padding-top: 1rem; }
+  a { color: #1a73e8; }
+</style>
+</head>
+<body>
+<h1>Privacy Policy</h1>
+<p class="meta"><strong>CSV Encoding Importer</strong> — a Google Sheets™ add-on<br>Effective date: July 3, 2026</p>
+
+<h2>1. Overview</h2>
+<p>CSV Encoding Importer (the "Add-on") is a Google Sheets editor add-on developed and operated by Minseong Kim (the "Developer", "we") that imports CSV files with automatic character-encoding detection and exports sheet data as CSV files in an encoding of your choice.</p>
+<p>The Add-on is designed around a simple principle: <strong>your data never leaves your browser and your Google account.</strong> It has no external servers, no databases, and collects no personal information.</p>
+
+<h2>2. Information the Add-on Accesses</h2>
+<p>The Add-on requests the minimum Google OAuth scopes necessary to function:</p>
+<table>
+  <tr><th>Scope</th><th>Purpose</th></tr>
+  <tr>
+    <td><code>https://www.googleapis.com/auth/spreadsheets.currentonly</code></td>
+    <td>Read and write access <strong>only to the spreadsheet in which you run the Add-on</strong>. Used to write imported CSV rows into the sheet and to read displayed cell values when exporting. The Add-on cannot see any of your other spreadsheets or Drive files.</td>
+  </tr>
+  <tr>
+    <td><code>https://www.googleapis.com/auth/script.container.ui</code></td>
+    <td>Display the Add-on's sidebar user interface inside Google Sheets.</td>
+  </tr>
+</table>
+<p><strong>CSV files you select for import</strong> are read locally inside the Add-on's sidebar in your browser. Encoding detection, decoding, and CSV parsing all happen in your browser. Only the resulting parsed cell text is transferred — via Google's own Apps Script infrastructure — into your spreadsheet. <strong>File contents are never transmitted to the Developer or to any third party.</strong></p>
+<p><strong>CSV files you export</strong> are generated entirely inside your browser and delivered as a direct browser download. Nothing is uploaded anywhere.</p>
+
+<h2>3. What We Do NOT Do</h2>
+<ul>
+  <li>We do <strong>not</strong> collect, store, or process any personal information.</li>
+  <li>We do <strong>not</strong> use analytics, tracking pixels, cookies, or advertising of any kind.</li>
+  <li>We do <strong>not</strong> operate external servers or databases; your data stays within your browser and Google's infrastructure.</li>
+  <li>We do <strong>not</strong> sell, rent, or share any data with third parties.</li>
+  <li>We do <strong>not</strong> use any data obtained through Google APIs to develop, improve, or train machine-learning or artificial-intelligence models.</li>
+</ul>
+
+<h2>4. Data Storage and Retention</h2>
+<p>The Developer stores nothing. During an import, the Add-on keeps small technical markers (import progress positions used to prevent duplicate writes if a network retry occurs) in Google Apps Script's cache service. These markers are tied to your spreadsheet, contain no file contents, and expire automatically within approximately one hour.</p>
+
+<h2>5. Google API Services User Data Policy</h2>
+<p>CSV Encoding Importer's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the <strong>Limited Use</strong> requirements.</p>
+
+<h2>6. Revoking Access</h2>
+<p>You can revoke the Add-on's access to your Google account at any time:</p>
+<ol>
+  <li>Visit <a href="https://myaccount.google.com/permissions">Google Account – Third-party apps &amp; services</a>, or</li>
+  <li>Uninstall the Add-on from Google Sheets (Extensions → Add-ons → Manage add-ons).</li>
+</ol>
+<p>Because the Add-on stores no data, revoking access removes everything immediately.</p>
+
+<h2>7. Children's Privacy</h2>
+<p>The Add-on is not directed at children and, in any case, does not collect personal information from anyone.</p>
+
+<h2>8. Changes to This Policy</h2>
+<p>If this policy changes, the updated version will be posted at this page with a revised effective date. Material changes will be reflected before they take effect.</p>
+
+<h2>9. Contact</h2>
+<p>If you have any questions about this Privacy Policy, please contact the Developer at:</p>
+<p><strong>Email:</strong> qnfpdlr124@gmail.com</p>
+
+<footer>Google Sheets is a trademark of Google LLC. This Add-on is not affiliated with or endorsed by Google. · <a href="terms.html">Terms of Service</a></footer>
+</body>
+</html>
