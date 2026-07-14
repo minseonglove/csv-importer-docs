@@ -19,7 +19,7 @@
 </head>
 <body>
 <h1>Privacy Policy</h1>
-<p class="meta"><strong>CSV Encoding Importer</strong> — a Google Sheets™ add-on<br>Effective date: July 3, 2026</p>
+<p class="meta"><strong>CSV Encoding Importer</strong> — a Google Sheets™ add-on<br>Effective date: July 14, 2026</p>
 
 <h2>1. Overview</h2>
 <p>CSV Encoding Importer (the "Add-on") is a Google Sheets editor add-on developed and operated by Minseong Kim (the "Developer", "we") that imports CSV files with automatic character-encoding detection and exports sheet data as CSV files in an encoding of your choice.</p>
@@ -53,10 +53,21 @@
 <h2>4. Data Storage and Retention</h2>
 <p>The Developer stores nothing. During an import, the Add-on keeps small technical markers (import progress positions used to prevent duplicate writes if a network retry occurs) in Google Apps Script's cache service. These markers are tied to your spreadsheet, contain no file contents, and expire automatically within approximately one hour.</p>
 
-<h2>5. Google API Services User Data Policy</h2>
+<h2>5. Data Security</h2>
+<p>We apply the following measures to protect the data the Add-on accesses, including the contents of the spreadsheet you run it in:</p>
+<ul>
+  <li><strong>Encryption in transit.</strong> All communication between the Add-on and Google's APIs takes place over encrypted HTTPS/TLS connections.</li>
+  <li><strong>Processed in memory, never persisted by us.</strong> CSV file contents and spreadsheet cell values are processed in your browser's memory. They are never written to disk by the Add-on and never transmitted to the Developer — we operate no servers or databases.</li>
+  <li><strong>Encrypted, minimal server-side state.</strong> The only data held outside your browser is the short-lived import progress markers described in Section 4. They are stored in Google Apps Script's cache service on Google's infrastructure (encrypted at rest by Google), contain no file or cell contents, are scoped to your spreadsheet, and expire automatically within approximately one hour.</li>
+  <li><strong>Least-privilege access.</strong> The Add-on can access only the single spreadsheet in which you run it (<code>spreadsheets.currentonly</code>); it cannot reach any of your other spreadsheets or Drive files.</li>
+  <li><strong>No third-party access.</strong> Your data is never shared with, sold to, or made accessible to any third party, and is never used to develop, improve, or train machine-learning or artificial-intelligence models.</li>
+  <li><strong>Revocable at any time.</strong> You can revoke the Add-on's access at any time as described in Section 7, which immediately ends all access.</li>
+</ul>
+
+<h2>6. Google API Services User Data Policy</h2>
 <p>CSV Encoding Importer's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the <strong>Limited Use</strong> requirements.</p>
 
-<h2>6. Revoking Access</h2>
+<h2>7. Revoking Access</h2>
 <p>You can revoke the Add-on's access to your Google account at any time:</p>
 <ol>
   <li>Visit <a href="https://myaccount.google.com/permissions">Google Account – Third-party apps &amp; services</a>, or</li>
@@ -64,13 +75,13 @@
 </ol>
 <p>Because the Add-on stores no data, revoking access removes everything immediately.</p>
 
-<h2>7. Children's Privacy</h2>
+<h2>8. Children's Privacy</h2>
 <p>The Add-on is not directed at children and, in any case, does not collect personal information from anyone.</p>
 
-<h2>8. Changes to This Policy</h2>
+<h2>9. Changes to This Policy</h2>
 <p>If this policy changes, the updated version will be posted at this page with a revised effective date. Material changes will be reflected before they take effect.</p>
 
-<h2>9. Contact</h2>
+<h2>10. Contact</h2>
 <p>If you have any questions about this Privacy Policy, please contact the Developer at:</p>
 <p><strong>Email:</strong> qnfpdlr124@gmail.com</p>
 
